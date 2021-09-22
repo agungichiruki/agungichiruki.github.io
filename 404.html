@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/pico.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/fontawesome/css/all.min.css">
+    <title></title>
+  </head>
+  <body class="container">
+    <nav>
+    <ul>
+        <li>
+            <h3>AgungIchiruki</h3>
+        </li>
+    </ul>
+    <ul>
+        <ul class="nav-menu">
+            
+            <li class="nav-item"><a href="/" class="secondary">Home</a></li>
+            
+            <li class="nav-item"><a href="/blog" class="secondary">Blog</a></li>
+            
+            <li class="nav-item"><a href="/c" class="secondary">C</a></li>
+            
+            <li class="nav-item"><a href="/c++" class="secondary">C++</a></li>
+            
+            <li class="nav-item"><a href="/python" class="secondary">Python</a></li>
+            
+            <li class="nav-item"><a href="/go" class="secondary">Go</a></li>
+            
+            <li class="nav-item"><a href="/sct" class="secondary">SCT</a></li>
+            
+            <li class="nav-item"><a href="/about" class="secondary">About me</a></li>
+            
+        </ul>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </ul>
+</nav>
+
+<script>
+    const hamburger = document.querySelector(".hamburger");
+    const navMenu = document.querySelector(".nav-menu");
+
+    hamburger.addEventListener("click", mobileMenu);
+
+    function mobileMenu() {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+    }
+
+    const navLink = document.querySelectorAll(".nav-link");
+
+    navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+    function closeMenu() {
+        hamburger.classList.remove("active");
+        navMenu.classList.remove("active");
+    }
+
+</script>
+    <main>
+        <div class="page404">
+  <img src="assets/images/404.png" alt="">
+  <!-- <h1>404</h1>
+  <p><strong>Page not found :(</strong></p> -->
+  <p>The requested page could not be found.</p>
+</div>
+    </main>
+    <footer class="container footer">
+    <a href="mailto:agung.ichiruki@gmail.com" target="_blank" class="secondary"><i class="fas fa-envelope fa-lg"></i></a>
+    <a href="https://github.com/agungichiruki" target="_blank" class="secondary"><i class="fab fa-github fa-lg"></i></a>
+    <a href="https://linkedin.com/in/mohammad-agung-b7213a121/" target="_blank" class="secondary"><i class="fab fa-linkedin fa-lg"></i></a>
+    <br/>
+    <small>Agung Ichiruki • &copy; 2021 • agungichiruki.github.io</small>
+</footer>
+  </body>
+</html>

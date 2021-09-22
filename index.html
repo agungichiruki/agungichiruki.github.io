@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/pico.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/fontawesome/css/all.min.css">
+    <title>AgungIchiruki - Home</title>
+  </head>
+  <body class="container">
+    <nav>
+    <ul>
+        <li>
+            <h3>AgungIchiruki</h3>
+        </li>
+    </ul>
+    <ul>
+        <ul class="nav-menu">
+            
+            <li class="nav-item"><a href="/" class="secondary">Home</a></li>
+            
+            <li class="nav-item"><a href="/blog" class="secondary">Blog</a></li>
+            
+            <li class="nav-item"><a href="/c" class="secondary">C</a></li>
+            
+            <li class="nav-item"><a href="/c++" class="secondary">C++</a></li>
+            
+            <li class="nav-item"><a href="/python" class="secondary">Python</a></li>
+            
+            <li class="nav-item"><a href="/go" class="secondary">Go</a></li>
+            
+            <li class="nav-item"><a href="/sct" class="secondary">SCT</a></li>
+            
+            <li class="nav-item"><a href="/about" class="secondary">About me</a></li>
+            
+        </ul>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </ul>
+</nav>
+
+<script>
+    const hamburger = document.querySelector(".hamburger");
+    const navMenu = document.querySelector(".nav-menu");
+
+    hamburger.addEventListener("click", mobileMenu);
+
+    function mobileMenu() {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+    }
+
+    const navLink = document.querySelectorAll(".nav-link");
+
+    navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+    function closeMenu() {
+        hamburger.classList.remove("active");
+        navMenu.classList.remove("active");
+    }
+
+</script>
+    <main>
+        <h1>Hello all,</h1>
+
+<div class="justify-text">
+    <p>Welcome to this small space where I share my knowledge, experiences, and cool things that I just found out about (in the SCT section).</p>
+    <p>After some time. I finally decided to focus on writing in this small space so I wouldn't forget what I had learned. Because for me, rewriting what I've learned is the best way to keep the knowledge of it in my brain.</p>
+    <p>So, I hope you guys enjoy and get more knowledge from this small space. And if you have any corrections, requests, or just sharing information, don't hesitate to contact me via email. </p>
+    <p><i class="fas fa-coffee"></i> + <i class="fas fa-laptop-code"></i> + <i class="fas fa-headphones"></i> = This Little Space</p>
+</div>
+    </main>
+    <footer class="container footer">
+    <a href="mailto:agung.ichiruki@gmail.com" target="_blank" class="secondary"><i class="fas fa-envelope fa-lg"></i></a>
+    <a href="https://github.com/agungichiruki" target="_blank" class="secondary"><i class="fab fa-github fa-lg"></i></a>
+    <a href="https://linkedin.com/in/mohammad-agung-b7213a121/" target="_blank" class="secondary"><i class="fab fa-linkedin fa-lg"></i></a>
+    <br/>
+    <small>Agung Ichiruki • &copy; 2021 • agungichiruki.github.io</small>
+</footer>
+  </body>
+</html>
