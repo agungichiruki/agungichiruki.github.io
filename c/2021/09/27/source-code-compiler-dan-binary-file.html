@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../../../assets/css/pico.min.css">
+    <link rel="stylesheet" href="../../../../assets/css/style.css">
+    <link rel="stylesheet" href="../../../../assets/fontawesome/css/all.min.css">
+    <title>1B. Source Code, Compiler, dan Binary File</title>
+    <link type="application/atom+xml" rel="alternate" href="http://0.0.0.0:4000/feed.xml" title="Your awesome title" />
+    <!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>1B. Source Code, Compiler, dan Binary File | Your awesome title</title>
+<meta name="generator" content="Jekyll v4.2.0" />
+<meta property="og:title" content="1B. Source Code, Compiler, dan Binary File" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Sebelum kita memulai belajar bahasa pemprograman C, sebaiknya kita mengenal dulu apa itu source code, compiler, dan binary file. Ini penting karena dalam belajar dan membuat program dengan bahasa C, kita tidak akan pernah lepas dari ketiga hal ini." />
+<meta property="og:description" content="Sebelum kita memulai belajar bahasa pemprograman C, sebaiknya kita mengenal dulu apa itu source code, compiler, dan binary file. Ini penting karena dalam belajar dan membuat program dengan bahasa C, kita tidak akan pernah lepas dari ketiga hal ini." />
+<link rel="canonical" href="http://0.0.0.0:4000/c/2021/09/27/source-code-compiler-dan-binary-file.html" />
+<meta property="og:url" content="http://0.0.0.0:4000/c/2021/09/27/source-code-compiler-dan-binary-file.html" />
+<meta property="og:site_name" content="Your awesome title" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2021-09-27T00:00:00+08:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="1B. Source Code, Compiler, dan Binary File" />
+<script type="application/ld+json">
+{"datePublished":"2021-09-27T00:00:00+08:00","dateModified":"2021-09-27T00:00:00+08:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://0.0.0.0:4000/c/2021/09/27/source-code-compiler-dan-binary-file.html"},"url":"http://0.0.0.0:4000/c/2021/09/27/source-code-compiler-dan-binary-file.html","@type":"BlogPosting","description":"Sebelum kita memulai belajar bahasa pemprograman C, sebaiknya kita mengenal dulu apa itu source code, compiler, dan binary file. Ini penting karena dalam belajar dan membuat program dengan bahasa C, kita tidak akan pernah lepas dari ketiga hal ini.","headline":"1B. Source Code, Compiler, dan Binary File","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+  </head>
+  <body class="container">
+    <nav>
+    <ul>
+        <li>
+            <h3>AgungIchiruki</h3>
+        </li>
+    </ul>
+    <ul>
+        <ul class="nav-menu">
+            
+            <li class="nav-item"><a href="/" class="secondary">Home</a></li>
+            
+            <li class="nav-item"><a href="/blog" class="secondary">Blog</a></li>
+            
+            <li class="nav-item"><a href="/c" class="secondary">C</a></li>
+            
+            <li class="nav-item"><a href="/c++" class="secondary">C++</a></li>
+            
+            <li class="nav-item"><a href="/python" class="secondary">Python</a></li>
+            
+            <li class="nav-item"><a href="/go" class="secondary">Go</a></li>
+            
+            <li class="nav-item"><a href="/sct" class="secondary">SCT</a></li>
+            
+            <li class="nav-item"><a href="/about" class="secondary">About me</a></li>
+            
+        </ul>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </ul>
+</nav>
+
+<script>
+    const hamburger = document.querySelector(".hamburger");
+    const navMenu = document.querySelector(".nav-menu");
+
+    hamburger.addEventListener("click", mobileMenu);
+
+    function mobileMenu() {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+    }
+
+    const navLink = document.querySelectorAll(".nav-link");
+
+    navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+    function closeMenu() {
+        hamburger.classList.remove("active");
+        navMenu.classList.remove("active");
+    }
+
+</script>
+    <main>
+        <h1>1B. Source Code, Compiler, dan Binary File</h1>
+        <div class="justify-text">
+    <p>Sebelum kita memulai belajar bahasa pemprograman C, sebaiknya kita mengenal dulu apa itu source code, compiler, dan binary file. Ini penting karena dalam belajar dan membuat program dengan bahasa C, kita tidak akan pernah lepas dari ketiga hal ini.</p>
+    <!--more-->
+    <h3 style="margin-bottom: 10px; text-align: left;">Source Code</h3>
+    <p>Source code atau kode sumber adalah file teks yang berisi instruksi-intruksi yang akan dikerjakan komputer dalam tata bahasa C. Tetapi, tidak seperti file teks biasa yang memiliki ekstensi .txt, source code bahasa pemprograman C memiliki extensi .c dan .h (untuk perbedaan .c dan .h akan kita bahas nanti di tutorial selanjut-nya).</p>
+    <figure class="center-text">
+        <img src="../../../../assets/images/Posts/c-source-code2.png" alt="Dennis Ricthie">
+        <figcaption>File Source Code C</figcaption>
+        <br/>
+        <img src="../../../../assets/images/Posts/c-source-code1.png" alt="Dennis Ricthie">
+        <figcaption>Isi File Source Code C</figcaption>
+    </figure>
+
+    <h3 style="margin-bottom: 10px; text-align: left;">Compiler</h3>
+    <p>Source code yang kita buat masih belum bisa dijalankan oleh komputer, karena komputer hanya mengenali bahasa mesin. Untuk itulah kita butuh program compiler yang bertugas untuk menkonversi atau menterjemahkan instruksi dalam bahasa c yang dipahami manusia menjadi bahasa mesin yang dipahami oleh komputer. Proses konversi ini disebut kompilasi.</p>
+
+    <h3 style="margin-bottom: 10px; text-align: left;">Binary File</h3>
+    <p>Dari proses kompilasi yang dilakukan compiler, akan menghasilkan file binary yang dapat dijalankan oleh komputer. File binary ini dapat langsung kita jalankan dan format ekstensi-nya mengikuti sistem operasi yang kita gunakan saat proses kompilasi. Seperti contoh, saat anda melakukan proses kompilasi di sistem operasi Microsoft Windows, maka ekstensi file binary-nya adalah ".exe".</p>
+    <figure class="center-text">
+        <img src="../../../../assets/images/Posts/c-binary-file.png" alt="Dennis Ricthie">
+        <figcaption>Binary File</figcaption>
+    </figure>
+
+    <p>Setelah berkenalan secara singkat dengan Source Code, Compiler, dan Binary File, berikutnya kita akan menyiapkan apa-apa saja yang kita butuhkan untuk memulai belajar bahasa C. Kita akan mendownload dan menginstall text editor/IDE dan compiler di bagian <a href="#">Persiapan Belajar Bahasa C</a></p>
+</div>
+    </main>
+    <footer class="container footer">
+    <a href="mailto:agung.ichiruki@gmail.com" target="_blank" class="secondary"><i class="fas fa-envelope fa-lg"></i></a>
+    <a href="https://github.com/agungichiruki" target="_blank" class="secondary"><i class="fab fa-github fa-lg"></i></a>
+    <a href="https://linkedin.com/in/mohammad-agung-b7213a121/" target="_blank" class="secondary"><i class="fab fa-linkedin fa-lg"></i></a>
+    <br/>
+    <small>Agung Ichiruki • &copy; 2021 • agungichiruki.github.io</small>
+</footer>
+  </body>
+</html>

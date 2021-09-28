@@ -7,23 +7,23 @@
     <link rel="stylesheet" href="../../../../assets/css/style.css">
     <link rel="stylesheet" href="../../../../assets/fontawesome/css/all.min.css">
     <title>1A. Pengenalan Bahasa C</title>
-    <link type="application/atom+xml" rel="alternate" href="/feed.xml" title="Your awesome title" />
+    <link type="application/atom+xml" rel="alternate" href="http://0.0.0.0:4000/feed.xml" title="Your awesome title" />
     <!-- Begin Jekyll SEO tag v2.7.1 -->
 <title>1A. Pengenalan Bahasa C | Your awesome title</title>
 <meta name="generator" content="Jekyll v4.2.0" />
 <meta property="og:title" content="1A. Pengenalan Bahasa C" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="C adalah bahasa pemprograman general purpose yang dikembangkan oleh Dennis Ricthie pada tahun 1972 di Bell Labs. Bahasa ini merupakan pengembangan dari bahasa B, yang saat itu digunakan untuk menulis sistem operasi unix. Tetapi karena bahasa B terkesan lambat, maka dikembangkanlah bahasa C ini untuk menulis kembali dan menutupi kelemahan-kelemahan yang ada pada sistem operasi unix." />
-<meta property="og:description" content="C adalah bahasa pemprograman general purpose yang dikembangkan oleh Dennis Ricthie pada tahun 1972 di Bell Labs. Bahasa ini merupakan pengembangan dari bahasa B, yang saat itu digunakan untuk menulis sistem operasi unix. Tetapi karena bahasa B terkesan lambat, maka dikembangkanlah bahasa C ini untuk menulis kembali dan menutupi kelemahan-kelemahan yang ada pada sistem operasi unix." />
-<link rel="canonical" href="/c/2021/09/25/pengenalan-bahasa-c.html" />
-<meta property="og:url" content="/c/2021/09/25/pengenalan-bahasa-c.html" />
+<meta name="description" content="C adalah bahasa pemprograman general purpose yang digunakan untuk membuat berbagai aplikasi mulai dari sistem operasi seperti unix, kernel seperti linux, antivirus, embeded system hingga compiler untuk bahasa pemprograman." />
+<meta property="og:description" content="C adalah bahasa pemprograman general purpose yang digunakan untuk membuat berbagai aplikasi mulai dari sistem operasi seperti unix, kernel seperti linux, antivirus, embeded system hingga compiler untuk bahasa pemprograman." />
+<link rel="canonical" href="http://0.0.0.0:4000/c/2021/09/25/pengenalan-bahasa-c.html" />
+<meta property="og:url" content="http://0.0.0.0:4000/c/2021/09/25/pengenalan-bahasa-c.html" />
 <meta property="og:site_name" content="Your awesome title" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2021-09-25T00:00:00+08:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="1A. Pengenalan Bahasa C" />
 <script type="application/ld+json">
-{"headline":"1A. Pengenalan Bahasa C","dateModified":"2021-09-25T00:00:00+08:00","url":"/c/2021/09/25/pengenalan-bahasa-c.html","datePublished":"2021-09-25T00:00:00+08:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"/c/2021/09/25/pengenalan-bahasa-c.html"},"description":"C adalah bahasa pemprograman general purpose yang dikembangkan oleh Dennis Ricthie pada tahun 1972 di Bell Labs. Bahasa ini merupakan pengembangan dari bahasa B, yang saat itu digunakan untuk menulis sistem operasi unix. Tetapi karena bahasa B terkesan lambat, maka dikembangkanlah bahasa C ini untuk menulis kembali dan menutupi kelemahan-kelemahan yang ada pada sistem operasi unix.","@context":"https://schema.org"}</script>
+{"datePublished":"2021-09-25T00:00:00+08:00","dateModified":"2021-09-25T00:00:00+08:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://0.0.0.0:4000/c/2021/09/25/pengenalan-bahasa-c.html"},"url":"http://0.0.0.0:4000/c/2021/09/25/pengenalan-bahasa-c.html","@type":"BlogPosting","description":"C adalah bahasa pemprograman general purpose yang digunakan untuk membuat berbagai aplikasi mulai dari sistem operasi seperti unix, kernel seperti linux, antivirus, embeded system hingga compiler untuk bahasa pemprograman.","headline":"1A. Pengenalan Bahasa C","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
   </head>
@@ -86,28 +86,33 @@
     <main>
         <h1>1A. Pengenalan Bahasa C</h1>
         <div class="justify-text">
-    <p>C adalah bahasa pemprograman general purpose yang dikembangkan oleh Dennis Ricthie pada tahun 1972 di Bell Labs. Bahasa ini merupakan pengembangan dari bahasa B, yang saat itu digunakan untuk menulis sistem operasi unix. Tetapi karena bahasa B terkesan lambat, maka dikembangkanlah bahasa C ini untuk menulis kembali dan menutupi kelemahan-kelemahan yang ada pada sistem operasi unix.</p>
+    <p>C adalah bahasa pemprograman general purpose yang digunakan untuk membuat berbagai aplikasi mulai dari sistem operasi seperti unix, kernel seperti linux, antivirus, embeded system hingga compiler untuk bahasa pemprograman.</p>
     <!--more-->
+    <h3 style="margin-bottom: 10px; text-align: left;">Sejarah Bahasa Pemprograman C</h3>
+    <p>Dikembangkan pertama kali oleh Dennis Ricthie pada tahun 1972 di Bell Labs. Bahasa pemprograman C merupakan pengembangan dari bahasa pemprograman B, yang saat itu digunakan untuk menulis sistem operasi unix. Tetapi karena bahasa B terkesan lambat, maka dikembangkanlah bahasa C ini untuk menulis kembali dan menutupi kelemahan-kelemahan yang ada pada sistem operasi unix.</p>
     <figure class="center-text">
         <img src="../../../../assets/images/Posts/dennis-ricthie.jpg" alt="Dennis Ricthie">
         <figcaption>Dennis Ricthie</figcaption>
     </figure>
     <p>Bahasa C ini masuk dalam kategori bahasa tingkat menengah karena kecepatannya dan kemampuannya mengakses fungsi-fungsi dan perintah dasar bahasa mesin seperti bahasa tingkat rendah assembly, serta struktur dan tata bahasa C cenderung lebih mudah dibaca oleh manusia seperti bahasa tingkat tinggi python, ruby, java, dll.</p>
     <p>Pada perkembangannya, muncul versi-versi C lain yang pada akhirnya membuat kebingungan di kalangan programmer C. Karena itu, pada tahun 1983, American National Standards Institute (ANSI) membuat sebuah komite untuk membuat sebuah versi standar dari bahasa C. Setelah melalui proses yang panjang dan sengit, pada tahun 1989, telah berhasil disahkan standar yang dinamakan ANSI X3.159-1989, versi ini sering kali dinamakan ANSI C.</p>
+    <h3 style="margin-bottom: 10px; text-align: left;">Kelebihan Bahasa Pemprograman C</h3>
     <p>Bahasa C memiliki beberapa kelebihan diantaranya :</p>
     <ul>
         <li>Cepat, efisiensi dan kemampuan mengontrol penggunaan memori secara dinamis serta akses ke perintah dasar bahasa mesin membuat bahasa ini umumnya digunakan untuk membuat sistem dan jaringan komputer, embeded system dan aplikasi yang mengontrol perangkat keras secara langsung.</li>
         <li>Portabel dan multi-platform, karena compiler dari bahasa ini tersedia hampir di semua platform.</li>
         <li>Bahasa C mempunyai struktur yang baik sehingga mudah untuk dipahami. C disebut dengan bahasa yang terstruktur karena menggunakan fungsi-fungsi sebagai program-program bagiannya.</li>
     </ul>
-    <p>Bahasa C tergolong bahasa tua, lantas mengapa kita harus belajar bahasa ini, kenapa tidak langsung belajar bahasa tingkat tinggi saja seperti pyhon, ruby, java, dll. Selain karena kelebihannya yang sudah disebutkan diatas, bahasa C cocok untuk dipelajari oleh pemula yang baru belajar pemprograman karena :</p>
+    <h3 style="margin-bottom: 10px; text-align: left;">Kenapa Kita Belajar Bahasa Pemprograman C</h3>
+    <p>Bahasa C dibuat kurang lebih 49 tahun yang lalu (saat tutorial ini ditulis), jadi bisa dibilang bahasa C tergolong bahasa yang cukup tua, lantas mengapa kita harus belajar bahasa ini, kenapa tidak langsung belajar bahasa tingkat tinggi saja seperti pyhon, ruby, java, dll. Selain karena kelebihannya yang sudah disebutkan diatas, bahasa C cocok untuk dipelajari oleh pemula yang baru belajar pemprograman karena :</p>
     <ul>
         <li>C adalah bahasa pemprograman prosedural, sehingga kita tidak langsung dipusingkan dengan konsep pemprograman berbasis objek.</li>
         <li>Bahasa C hanya menyediakan sedikit kata kunci, C standar ASNI hanya menyediakan sebanyak 32 kata kunci, Turbo 39 kata kunci, C++ 48 kata kunci. Semakin sedikit kata kunci yang digunakan oleh suatu bahasa maka semakin mudah bagi kita untuk mempelajari dan menggunakan bahasa ini.</li>
         <li>Bahasa-bahasa tingkat tinggi seperti python, java, php, dll. merupakan turunan atau pengembagan dari bahasa C, maka kita jadi lebih mudah untuk mempelajari bahasa-bahasa tersebut setelah belajar bahasa C.</li>
         <li>C memiliki beragam library untuk memudahkan kita untuk melakukan tugas-tugas tertentu.</li>
+        <li>Bahasa c sangat baik digunakan sebagai bahasa pengantar untuk belajar algortima.</li>
     </ul>
-    <p>Jadi bisa kita simpulkan, bahasa pemprograman C ini cocok untuk dipelajari sebagai bahasa pemprograman pertama kita. Dibagian berikutnya kita akan membahas apa itu Compiler, Source Code dan Binary File.</p>
+    <p>Jadi bisa kita simpulkan, bahasa pemprograman C ini cocok untuk dipelajari sebagai bahasa pemprograman pertama kita. Dibagian berikutnya kita akan membahas apa itu <a href="/c/2021/09/27/source-code-compiler-dan-binary-file.html">Compiler, Source Code dan Binary File.</a></p>
 </div>
     </main>
     <footer class="container footer">
