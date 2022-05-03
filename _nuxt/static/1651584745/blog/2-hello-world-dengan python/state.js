@@ -1,1 +1,0 @@
-window.__NUXT__=(function(a){return {staticAssetsBase:"\u002F_nuxt\u002Fstatic\u002F1651584745",layout:"default",error:a,serverRendered:true,routePath:"\u002Fblog\u002F2-hello-world-dengan%20python",config:{_app:{basePath:"\u002F",assetsPath:"\u002F_nuxt\u002F",cdnURL:a},content:{dbHash:"c41e00b3"}}}}(null));
