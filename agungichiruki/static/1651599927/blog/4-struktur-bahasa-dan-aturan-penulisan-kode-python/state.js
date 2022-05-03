@@ -1,0 +1,1 @@
+window.__NUXT__=(function(a){return {staticAssetsBase:"\u002Fagungichiruki\u002Fstatic\u002F1651599927",layout:"default",error:a,serverRendered:true,routePath:"\u002Fblog\u002F4-struktur-bahasa-dan-aturan-penulisan-kode-python",config:{_app:{basePath:"\u002F",assetsPath:"\u002Fagungichiruki\u002F",cdnURL:a},content:{dbHash:"e7dd166b"}}}}(null));

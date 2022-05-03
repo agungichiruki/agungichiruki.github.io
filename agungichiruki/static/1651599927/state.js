@@ -1,0 +1,1 @@
+window.__NUXT__=(function(a,b){return {staticAssetsBase:"\u002Fagungichiruki\u002Fstatic\u002F1651599927",layout:"default",error:a,serverRendered:true,routePath:b,config:{_app:{basePath:b,assetsPath:"\u002Fagungichiruki\u002F",cdnURL:a},content:{dbHash:"e7dd166b"}}}}(null,"\u002F"));
