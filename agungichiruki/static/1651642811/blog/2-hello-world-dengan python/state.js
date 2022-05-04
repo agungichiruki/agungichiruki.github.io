@@ -1,0 +1,1 @@
+window.__NUXT__=(function(a){return {staticAssetsBase:"\u002Fagungichiruki\u002Fstatic\u002F1651642811",layout:"default",error:a,serverRendered:true,routePath:"\u002Fblog\u002F2-hello-world-dengan%20python",config:{_app:{basePath:"\u002F",assetsPath:"\u002Fagungichiruki\u002F",cdnURL:a},content:{dbHash:"2e3bd7eb"}}}}(null));
