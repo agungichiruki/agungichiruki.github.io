@@ -1,0 +1,1 @@
+window.__NUXT__=(function(a){return {staticAssetsBase:"\u002Fagungichiruki\u002Fstatic\u002F1652015296",layout:"default",error:a,serverRendered:true,routePath:"\u002Fblog\u002F14-tipe-data-tuple-di-python",config:{_app:{basePath:"\u002F",assetsPath:"\u002Fagungichiruki\u002F",cdnURL:a},content:{dbHash:"a812d21e"}}}}(null));
