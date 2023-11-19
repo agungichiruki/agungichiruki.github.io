@@ -7,7 +7,7 @@ tags:
   - html
   - pengantar
   - belajar
-description: "Pengantar belajar HTML: mengenal apa itu html dan sejarah singkatnya"
+description: "Mengenal apa itu html dan sejarah singkatnya"
 ---
 
 HTML (HyperText Markup Language) adalah bahasa markah standar yang digunakan untuk membuat dan merancang halaman web. HTML memberikan struktur dasar dari semua halaman website di internet. 

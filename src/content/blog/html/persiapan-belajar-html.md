@@ -7,7 +7,7 @@ tags:
   - html
   - persiapan
   - belajar
-description: "Persiapan belajar HTML: apa saja yang harus dipersiapkan untuk mulai belajar dan membuat halaman website dengan HTML"
+description: "Apa saja yang harus dipersiapkan untuk mulai belajar dan membuat halaman website dengan HTML"
 ---
 
 Untuk mulai belajar dan membuat halaman website dengan HTML, ada dua hal yang kita butuhkan didalam prosesnya. Yang pertama kita butuh program/aplikasi teks editor atau kode editor. Kedua, kita butuh program/aplikasi peramban internet/web browser.
