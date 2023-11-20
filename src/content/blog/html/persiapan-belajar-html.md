@@ -7,6 +7,8 @@ tags:
   - html
   - persiapan
   - belajar
+  - web_browser
+  - kode_editor
 description: "Apa saja yang harus dipersiapkan untuk mulai belajar dan membuat halaman website dengan HTML"
 ---
 

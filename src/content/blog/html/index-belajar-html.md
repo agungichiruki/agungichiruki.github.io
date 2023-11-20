@@ -14,3 +14,5 @@ description: "Index belajar HTML (HyperText Markup Language)"
 [#1 Pengantar HTML](/posts/pengantar-belajar-html)
 
 [#2 Persiapan Belajar HTML](/posts/persiapan-belajar-html)
+
+[#3 Membuat dan Menampilkan File HTML di Web Browser](/posts/membuat-dan-menampilkan-file-html-di-web-browser)
