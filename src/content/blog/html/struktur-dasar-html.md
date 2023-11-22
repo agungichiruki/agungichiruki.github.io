@@ -1,6 +1,6 @@
 ---
 author: AgungIchiruki
-pubDatetime: 2023-11-20T23:28:29.311198+08:00
+pubDatetime: 2023-11-23T03:04:24.688063+08:00
 title: Struktur Dasar HTML
 postSlug: struktur-dasar-html
 tags:
