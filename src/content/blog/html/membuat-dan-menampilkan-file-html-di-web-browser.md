@@ -50,19 +50,19 @@ Kemudian, tuliskan kode HTML dibawah ini ke file "index.html" yang tadi kita bua
 <!DOCTYPE html>
 
 <html>
-<head>
+  <head>
     <title>My First Website</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <h1>Hello, This is my first website</h1>
-</body>
+  </body>
 </html>
 ```
 
 Lalu simpan perubahan file HTML kita dengan menekan "ctrl + s".
 
-Jika kalian bingung denga kode diatas itu wajar, karena kalian baru belajar. Abaikan saja karena kode diatas nanti akan kita bahas di tulisan selanjutnya. Tujuan kita ditulisan ini hanya belajar membuat dan menampilkan file HTML.
+Jika kalian bingung dengan kode diatas itu wajar, karena kalian baru belajar. Abaikan saja karena kode diatas nanti akan kita bahas di tulisan selanjutnya. Tujuan kita ditulisan ini hanya belajar membuat dan menampilkan file HTML.
 
 Sekarang, buka folder tempat kita menyimpan file HTML tadi. Kemudian klik kiri dua kali pada file HTML yang sudah kita buat untuk membukanya pada web browser. Sistem Operasi kita akan mengenali file HTML yang kita buat dan akan otomatis membukanya dengan web browser yang terinstall.
 
